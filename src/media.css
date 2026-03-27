@@ -1,0 +1,226 @@
+ 
+/* ============================================
+   MEDIA QUERIES — Bekzod Portfolio
+   Breakpoints: 1024px | 768px | 480px
+   ============================================ */
+
+/* ---- TABLET (1024px) ---- */
+@media (max-width: 1024px) {
+
+  /* Navbar */
+  nav {
+    padding: 0 16px !important;
+    height: 52px !important;
+  }
+
+  nav > div:nth-child(2) {
+    gap: 0 !important;
+  }
+
+  nav > div:nth-child(2) button {
+    padding: 5px 7px !important;
+    font-size: 10px !important;
+  }
+
+  /* Hero */
+  #root > div > main > section:first-child > div {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  #root > div > main > section:first-child > div > div:last-child {
+    display: none !important;
+  }
+
+  /* About */
+  #about > div > div {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Skills */
+  #skills > div > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Timeline */
+  #timeline > div > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  #timeline > div > div:last-child > div:last-child {
+    display: none !important;
+  }
+
+  /* Projects */
+  #projects > div > div:last-child {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Certificates */
+  #certificates > div > div:last-child {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Contact */
+  #contact > div > div:last-child {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+}
+
+/* ---- MOBILE LARGE (768px) ---- */
+@media (max-width: 768px) {
+
+  /* Navbar — linklar yashiriladi */
+  nav > div:nth-child(2) {
+    display: none !important;
+  }
+
+  nav {
+    justify-content: space-between !important;
+  }
+
+  /* "Ochiq ish uchun" badge yashiriladi */
+  nav > div:last-child > div:first-child {
+    display: none !important;
+  }
+
+  /* Hero */
+  #root > div > main > section:first-child {
+    padding: 40px 16px 32px !important;
+    min-height: auto !important;
+  }
+
+  #root > div > main > section:first-child h1 {
+    font-size: 28px !important;
+  }
+
+  #root > div > main > section:first-child > div > div:first-child > div:nth-child(4) {
+    flex-wrap: wrap !important;
+  }
+
+  #root > div > main > section:first-child > div > div:first-child > div:nth-child(4) button,
+  #root > div > main > section:first-child > div > div:first-child > div:nth-child(4) a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Barcha sectionlar padding */
+  section {
+    padding: 32px 16px !important;
+  }
+
+  /* About info jadval */
+  #about > div > div > div:first-child > div {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 2px !important;
+  }
+
+  /* Skills barlar */
+  #skills > div > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Projects — 1 ustun */
+  #projects > div > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Certificates — 1 ustun */
+  #certificates > div > div:last-child {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Contact kartalar */
+  #contact > div > div:last-child > div:first-child > div:nth-child(2) {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 16px !important;
+    padding: 20px 16px !important;
+  }
+
+  footer > div:nth-child(2) {
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+  }
+}
+
+/* ---- MOBILE SMALL (480px) ---- */
+@media (max-width: 480px) {
+
+  /* Navbar logo subtitle yashiriladi */
+  nav > div:first-child > div > div:last-child {
+    display: none !important;
+  }
+
+  /* Hero nom yanada kichik */
+  #root > div > main > section:first-child h1 {
+    font-size: 24px !important;
+    line-height: 1.15 !important;
+  }
+
+  /* Hero badge kichik */
+  #root > div > main > section:first-child > div > div:first-child > div:first-child {
+    font-size: 10px !important;
+    padding: 3px 10px !important;
+  }
+
+  /* Tugmalar to'liq kenglik */
+  #root > div > main > section:first-child > div > div:first-child > div:nth-child(4) {
+    gap: 8px !important;
+  }
+
+  /* Section sarlavhalar */
+  #about h2, #skills h2, #timeline h2,
+  #projects h2, #certificates h2, #contact h2 {
+    font-size: 18px !important;
+  }
+
+  /* Contact kartalar — 1 ustun */
+  #contact > div > div:last-child > div:first-child > div:nth-child(2) {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Timeline grid */
+  #timeline > div > div:last-child > div:first-child > div {
+    grid-template-columns: 80px 16px 1fr !important;
+  }
+
+  /* Footer linklar wrap */
+  footer > div:last-child {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Back to top tugma */
+  button[style*="position: fixed"] {
+    bottom: 16px !important;
+    right: 16px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+/* ---- JUDA KICHIK (360px) ---- */
+@media (max-width: 360px) {
+
+  nav {
+    padding: 0 12px !important;
+  }
+
+  #root > div > main > section:first-child h1 {
+    font-size: 22px !important;
+  }
+
+  section {
+    padding: 24px 12px !important;
+  }
+}
