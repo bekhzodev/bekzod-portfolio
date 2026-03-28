@@ -182,7 +182,7 @@ export default function Contact({ lang, accent }) {
                   {lang === 'uz' ? "Saytni ko'rganlar" : 'Total visitors'}
                 </span>
               </div>
-              <span style={{ fontSize: '16px', fontWeight: 500, color: accent }}>1,247</span>
+              <span style={{ fontSize: '16px', fontWeight: 500, color: accent }}>916</span>
             </div>
           </div>
 
